@@ -1,4 +1,4 @@
-" autoload/cmake.vim - cmake plugin for vim 
+" *cmake.vim.txt* - cmake plugin for vim 
 " Maintainer:   Akshit Sharma <https://github.com/akshit-sharma>
 
 let s:cmake_vim_plugin_version = '0.0.1'

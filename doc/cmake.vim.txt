@@ -1,0 +1,60 @@
+ *cmake.vim.txt* cmake integration plugin for vim
+
+ Authors:   Akshit Sharma <https://github.com/akshit-sharma>
+ Licence:   GPLv3
+ Version:   0.0.5
+
+ INTRODUCTION                                                           *cmake*
+
+Plugin for cmake integration for vim
+
+COMMANDS                                                       *cmake-commands*
+
+:CMake [ExtraArgs]                                                     *:CMake*
+    Creates a build directory (if not present) in the same folder. It 
+    then generates cmake project. Name of the default directory is 
+    cmake-build-debug (can be changed by setting cmake_default_build).
+
+:CMakeBuild [ExtraArgs]                                           *:CMakeBuild*
+    Builds cmake project. 
+
+:CMakeClean                                                       *:CMakeClean*
+    Equivalent to make clean.
+
+:CMakeGenerate [ExtraArgs]                                     *:CMakeGenerate*
+    Generates cmake project.
+
+:CMakePurge                                                       *:CMakePurge*
+    Removes cmake build directories.
+
+:CMakeResetAndReload [Args]                                *CMakeResetAndReload*
+    Removes cmake build directories and re-generates cmake project.
+
+:CMakeSelectTarget [Args]                                   *:CMakeSelectTarget*
+    Selects a specific target.
+
+
+VARIABLES                                                     *cmake-variables*
+
+
+
+g:cmake_build_type                        equivalent to -DCMAKE_BUILD_TYPE
+
+g:cmake_c_compiler                        equivalent to -DCMAKE_C_COMPILER
+
+g:cmake_cxx_compiler                      equivalent to -DCMAKE_CXX_COMPILER
+
+g:cmake_cuda_compiler                     equivalent to -DCMAKE_CUDA_COMPILER
+
+g:cmake_compile_commands                  Generates compile_commands.json
+
+g:cmake_compile_commands_link             links generated compile_commands.json
+                                          to base root of the project.
+
+g:cmake_default_build_directory           Name of the default build directory.
+
+g:cmake_default_build_system              Name of the generator used.
+
+g:cmake_install_prefix                    equivalent to -DCMAKE_INSTALL_PREFIX
+
+vim: tw=80 ts=2 sw=2 sts=2 et ft=help
